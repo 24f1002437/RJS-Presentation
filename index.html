@@ -3,127 +3,121 @@
 <head>
   <meta charset="utf-8" />
   <title>Quarterly Earnings — Interactive Presentation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <!-- Reveal.js -->
+  <!-- RevealJS -->
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/reveal.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/black.css">
 
   <!-- Highlight.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
 
   <style>
-    .email { font-size: 1rem; margin-top: 12px; }
+    /* Footer email visible on every slide */
+    #global-email {
+      position: fixed;
+      bottom: 12px;
+      right: 20px;
+      font-size: 0.85rem;
+      opacity: 0.85;
+      z-index: 9999;
+    }
     pre code { font-size: 0.9rem; }
     .big-number { font-size: 2.4rem; font-weight: 700; }
   </style>
 </head>
 <body>
 
+<!-- Footer email (on every slide automatically) -->
+<div id="global-email">
+  Email: <strong>24f1002437@ds.study.iitm.ac.in</strong>
+</div>
+
 <div class="reveal">
 <div class="slides">
 
-<!-- Title Slide WITH email clearly shown -->
+<!-- Slide 1 -->
 <section>
   <h1>Q4 Quarterly Earnings</h1>
   <h3>Technical Consultant Presentation</h3>
-  <p class="email"><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
 
   <aside class="notes">
-    Introduce yourself and mention that your contact email is visible on this slide.
+    Introduce yourself, highlight your email in the footer.
   </aside>
 </section>
 
-<!-- Markdown slide -->
+<!-- Markdown Slide -->
 <section data-markdown>
 <script type="text/template">
-## Quarterly Performance Summary (Markdown)
+## Quarterly Summary (Markdown)
 
-- Revenue grew **6.2% QoQ**
-- Net income rose due to cost optimization
-- Digital transaction volume increased 18%
-- Automated risk-review pipeline reduced processing time by 30%
+- Revenue up **6.2% QoQ**
+- Net income increased
+- Digital payments +18%
+- Risk automation -30% manual reviews
 
-> Slide written fully in Markdown.
+> Slide rendered using Markdown.
 </script>
 
-<aside class="notes">
-  Explain that this slide demonstrates RevealJS Markdown rendering.
-</aside>
+<aside class="notes">Explain Markdown support.</aside>
 </section>
 
-<!-- Contact Slide (2nd explicit email requirement) -->
+<!-- Fragment Slide -->
 <section>
-  <h2>Contact Information</h2>
-  <p><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
-
-  <aside class="notes">
-    This ensures automated validators detect the email.
-  </aside>
-</section>
-
-<!-- Fragment animations -->
-<section>
-  <h2>Key Growth Drivers</h2>
+  <h2>Growth Drivers</h2>
   <ul>
-    <li class="fragment">Higher EMEA trading volume</li>
-    <li class="fragment">Lower operational costs</li>
-    <li class="fragment">Strong corporate banking inflows</li>
+    <li class="fragment">Higher trading volume in EMEA</li>
+    <li class="fragment">Reduced operating expenses</li>
+    <li class="fragment">Corporate client expansion</li>
   </ul>
 
-  <aside class="notes">
-    Reveal each point with fragments to maintain focus.
-  </aside>
+  <aside class="notes">Discuss each point revealed by fragments.</aside>
 </section>
 
-<!-- Code example with syntax highlighting -->
+<!-- Code Sample -->
 <section>
-  <h2>Code Sample: CAGR Calculation</h2>
+  <h2>Code Example</h2>
 
   <pre><code class="language-javascript">
+// CAGR formula
 function computeCAGR(begin, end, years) {
   return Math.pow(end / begin, 1 / years) - 1;
 }
 
-console.log(computeCAGR(100, 150, 3)); // 14.47%
+console.log(computeCAGR(100, 150, 3)); // ≈ 14.47%
   </code></pre>
 
-  <aside class="notes">
-    Show how CAGR is computed in analysis scripts.
-  </aside>
+  <aside class="notes">Demonstrate syntax highlighting.</aside>
 </section>
 
-<!-- Math Equations using MathJax -->
+<!-- Math Equations -->
 <section>
-  <h2>Financial Math Equations</h2>
+  <h2>Financial Equations</h2>
 
   <p class="fragment">Present Value:</p>
-  <p class="fragment">$$PV = \frac{CF}{(1+r)^t}$$</p>
+  <p class="fragment">$$ PV = \frac{CF}{(1+r)^t} $$</p>
 
-  <p class="fragment">Net Present Value (NPV):</p>
-  <p class="fragment">$$NPV = \sum_{t=0}^{T} \frac{CF_t}{(1+r)^t} - Initial$$</p>
+  <p class="fragment">Net Present Value:</p>
+  <p class="fragment">
+    $$ NPV = \sum_{t=0}^{T} \frac{CF_t}{(1+r)^t} - InitialInvestment $$
+  </p>
 
-  <aside class="notes">
-    Explain discount factors and time value of money.
-  </aside>
+  <aside class="notes">Discuss financial math.</aside>
 </section>
 
-<!-- Closing Slide -->
+<!-- Closing -->
 <section>
   <h2>End of Presentation</h2>
   <p class="fragment">Hosted on GitHub Pages</p>
-  <p class="fragment"><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
-  <p class="fragment">Append <code>?v=1</code>, <code>?v=2</code> to refresh cache</p>
+  <p class="fragment">Use <code>?v=1</code>, <code>?v=2</code> to refresh updates</p>
 
-  <aside class="notes">
-    Wrap up and provide repo link.
-  </aside>
+  <aside class="notes">Wrap up and share links.</aside>
 </section>
 
 </div>
 </div>
 
-<!-- Reveal.js scripts -->
+<!-- RevealJS plugins -->
 <script src="https://unpkg.com/reveal.js@4/dist/reveal.js"></script>
 <script src="https://unpkg.com/reveal.js@4/plugin/markdown/markdown.js"></script>
 <script src="https://unpkg.com/reveal.js@4/plugin/highlight/highlight.js"></script>
@@ -137,7 +131,7 @@ console.log(computeCAGR(100, 150, 3)); // 14.47%
 <script>
 window.MathJax = {
   tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-  svg: { fontCache: 'global' }
+  svg: { fontCache: "global" }
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
