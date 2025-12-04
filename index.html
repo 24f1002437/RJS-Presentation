@@ -3,135 +3,120 @@
 <head>
   <meta charset="utf-8" />
   <title>Quarterly Earnings — Interactive Presentation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- RevealJS -->
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/reveal.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/black.css">
 
-  <!-- Highlight.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
-
-  <style>
-    /* Footer email visible on every slide */
-    #global-email {
-      position: fixed;
-      bottom: 12px;
-      right: 20px;
-      font-size: 0.85rem;
-      opacity: 0.85;
-      z-index: 9999;
-    }
-    pre code { font-size: 0.9rem; }
-    .big-number { font-size: 2.4rem; font-weight: 700; }
-  </style>
 </head>
+
 <body>
-
-<!-- Footer email (on every slide automatically) -->
-<div id="global-email">
-  Email: <strong>24f1002437@ds.study.iitm.ac.in</strong>
-</div>
-
 <div class="reveal">
 <div class="slides">
 
-<!-- Slide 1 -->
+<!-- SLIDE 1 -->
 <section>
   <h1>Q4 Quarterly Earnings</h1>
   <h3>Technical Consultant Presentation</h3>
+  <p><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
 
   <aside class="notes">
-    Introduce yourself, highlight your email in the footer.
+    Introduce the purpose of the quarterly report.
   </aside>
 </section>
 
-<!-- Markdown Slide -->
+<!-- SLIDE 2 (Markdown slide) -->
 <section data-markdown>
 <script type="text/template">
 ## Quarterly Summary (Markdown)
 
-- Revenue up **6.2% QoQ**
-- Net income increased
-- Digital payments +18%
-- Risk automation -30% manual reviews
+- Revenue increased **6.2% QoQ**
+- Net income improved
+- Digital payments volume grew by **18%**
+- Risk automation saved 30% effort
 
-> Slide rendered using Markdown.
+**Email:** 24f1002437@ds.study.iitm.ac.in
 </script>
 
-<aside class="notes">Explain Markdown support.</aside>
+<aside class="notes">Explain summary highlights.</aside>
 </section>
 
-<!-- Fragment Slide -->
+<!-- SLIDE 3 (Fragments) -->
 <section>
   <h2>Growth Drivers</h2>
+
   <ul>
-    <li class="fragment">Higher trading volume in EMEA</li>
-    <li class="fragment">Reduced operating expenses</li>
-    <li class="fragment">Corporate client expansion</li>
+    <li class="fragment">EMEA trading volume increased</li>
+    <li class="fragment">Operational cost reduction</li>
+    <li class="fragment">Higher corporate banking revenue</li>
   </ul>
 
-  <aside class="notes">Discuss each point revealed by fragments.</aside>
+  <p><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
+
+  <aside class="notes">Discuss sequential growth factors.</aside>
 </section>
 
-<!-- Code Sample -->
+<!-- SLIDE 4 (Code) -->
 <section>
-  <h2>Code Example</h2>
+  <h2>CAGR Calculation (Code Example)</h2>
 
   <pre><code class="language-javascript">
-// CAGR formula
 function computeCAGR(begin, end, years) {
   return Math.pow(end / begin, 1 / years) - 1;
 }
 
-console.log(computeCAGR(100, 150, 3)); // ≈ 14.47%
+console.log(computeCAGR(100, 150, 3)); 
   </code></pre>
 
-  <aside class="notes">Demonstrate syntax highlighting.</aside>
+  <p><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
+
+  <aside class="notes">
+    CAGR used in investment growth calculations.
+  </aside>
 </section>
 
-<!-- Math Equations -->
+<!-- SLIDE 5 (Math Equations) -->
 <section>
-  <h2>Financial Equations</h2>
+  <h2>Financial Math</h2>
 
   <p class="fragment">Present Value:</p>
   <p class="fragment">$$ PV = \frac{CF}{(1+r)^t} $$</p>
 
   <p class="fragment">Net Present Value:</p>
-  <p class="fragment">
-    $$ NPV = \sum_{t=0}^{T} \frac{CF_t}{(1+r)^t} - InitialInvestment $$
-  </p>
+  <p class="fragment">$$ NPV = \sum_{t=0}^{T} \frac{CF_t}{(1+r)^t} - InitialInvestment $$</p>
 
-  <aside class="notes">Discuss financial math.</aside>
+  <p><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
+
+  <aside class="notes">Explain discounting and NPV.</aside>
 </section>
 
-<!-- Closing -->
+<!-- SLIDE 6 (Closing) -->
 <section>
   <h2>End of Presentation</h2>
-  <p class="fragment">Hosted on GitHub Pages</p>
-  <p class="fragment">Use <code>?v=1</code>, <code>?v=2</code> to refresh updates</p>
+  <p class="fragment">Thank you for reviewing the quarterly report.</p>
+  <p class="fragment">Hosted on GitHub Pages.</p>
+  <p class="fragment">Use <code>?v=1</code>, <code>?v=2</code> to refresh cache.</p>
 
-  <aside class="notes">Wrap up and share links.</aside>
+  <p><strong>Email:</strong> 24f1002437@ds.study.iitm.ac.in</p>
+
+  <aside class="notes">Conclude and invite questions.</aside>
 </section>
 
 </div>
 </div>
 
-<!-- RevealJS plugins -->
 <script src="https://unpkg.com/reveal.js@4/dist/reveal.js"></script>
 <script src="https://unpkg.com/reveal.js@4/plugin/markdown/markdown.js"></script>
 <script src="https://unpkg.com/reveal.js@4/plugin/highlight/highlight.js"></script>
 <script src="https://unpkg.com/reveal.js@4/plugin/math/math.js"></script>
 <script src="https://unpkg.com/reveal.js@4/plugin/notes/notes.js"></script>
 
-<!-- Highlight.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-<!-- MathJax -->
 <script>
 window.MathJax = {
-  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-  svg: { fontCache: "global" }
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
