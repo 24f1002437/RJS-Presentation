@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Presentation</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Title Slide -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <p>Prepared by: <strong>24f1002437@ds.study.iitm.ac.in</strong></p>
+
+      <aside class="notes">
+        Welcome stakeholders. This presentation uses RevealJS to demonstrate modern, interactive reporting.
+      </aside>
+    </section>
+
+    <!-- Markdown Slide -->
+    <section data-markdown>
+      <textarea data-template>
+# Key Highlights (Markdown Slide)
+
+- Revenue Growth: **12% YoY**
+- Net Profit: **₹48 crore**
+- Customer Acquisition: *+18%*
+- Operating Margin: **7.4%**
+
+---
+
+Speaker notes help guide the presenter.
+      </textarea>
+    </section>
+
+    <!-- Slide with Fragments -->
+    <section>
+      <h2>Quarterly Breakdown</h2>
+      <p class="fragment">Revenue surged in all major business units.</p>
+      <p class="fragment">Digital transactions increased by 32%.</p>
+      <p class="fragment">Operating costs reduced by 4%.</p>
+
+      <aside class="notes">
+        Reveal each bullet slowly using fragments to maintain engagement.
+      </aside>
+    </section>
+
+    <!-- Code Sample with Highlight.js -->
+    <section>
+      <h2>Data Processing Pipeline (Code Example)</h2>
+      <pre><code class="language-python">
+import pandas as pd
+
+df = pd.read_csv("earnings.csv")
+df["growth"] = df["current_qtr"] / df["prev_qtr"] - 1
+print(df.head())
+      </code></pre>
+
+      <aside class="notes">
+        This example demonstrates internal analytics code used in financial processing.
+      </aside>
+    </section>
+
+    <!-- Math Slide -->
+    <section>
+      <h2>Financial Formula</h2>
+      <p>
+        Present Value:
+        $$ PV = \frac{CF}{(1 + r)^n} $$
+      </p>
+
+      <aside class="notes">
+        This is a standard discounted cash flow equation used in valuation.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealMath.KaTeX ],
+    highlight: {
+      highlightOnLoad: true
+    }
+  });
+</script>
+
+</body>
+</html>
