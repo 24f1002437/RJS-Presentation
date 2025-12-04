@@ -26,7 +26,6 @@
 
 <body>
 
-<!-- Footer with your email -->
 <footer>24f1002437@ds.study.iitm.ac.in</footer>
 
 <div class="reveal">
@@ -38,7 +37,7 @@
       <p>Prepared by: <strong>24f1002437@ds.study.iitm.ac.in</strong></p>
 
       <aside class="notes">
-        Presenter email: 24f1002437@ds.study.iitm.ac.in
+        Ensure stakeholders note the author email: 24f1002437@ds.study.iitm.ac.in
       </aside>
     </section>
 
@@ -58,21 +57,17 @@ Contact: **24f1002437@ds.study.iitm.ac.in**
       </textarea>
     </section>
 
-    <!-- Slide with Fragments -->
+    <!-- Fragment Slide -->
     <section>
       <h2>Quarterly Breakdown</h2>
-      <p class="fragment">Revenue surged in all major business units.</p>
-      <p class="fragment">Digital transactions increased by 32%.</p>
-      <p class="fragment">Operating costs reduced by 4%.</p>
-
-      <aside class="notes">
-        Internal use only — contact 24f1002437@ds.study.iitm.ac.in for data sources.
-      </aside>
+      <p class="fragment">Revenue increased across all units.</p>
+      <p class="fragment">Digital transactions up 32%.</p>
+      <p class="fragment">Costs reduced by 4%.</p>
     </section>
 
-    <!-- Code Sample -->
+    <!-- Code Example -->
     <section>
-      <h2>Data Processing Pipeline (Code Example)</h2>
+      <h2>Data Pipeline (Code Example)</h2>
       <pre><code class="language-python">
 import pandas as pd
 
@@ -82,14 +77,24 @@ print(df.head())
       </code></pre>
     </section>
 
-    <!-- Math Slide -->
+    <!-- MATH SLIDE 1 -->
     <section>
-      <h2>Financial Formula</h2>
-      <p>
-        Present Value:
-        $$ PV = \frac{CF}{(1 + r)^n} $$
-      </p>
-      <p>Email for further details: <strong>24f1002437@ds.study.iitm.ac.in</strong></p>
+      <h2>Mathematical Equations</h2>
+      <p>Discounted Cash Flow (DCF):</p>
+      <p>$$ PV = \frac{CF}{(1 + r)^n} $$</p>
+    </section>
+
+    <!-- MATH SLIDE 2 -->
+    <section>
+      <h2>Net Present Value (NPV)</h2>
+      <p>$$ NPV = \sum_{t=0}^{N} \frac{CF_t}{(1+r)^t} $$</p>
+    </section>
+
+    <!-- MATH SLIDE 3 -->
+    <section>
+      <h2>Compound Annual Growth Rate (CAGR)</h2>
+      <p>$$ CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{n}} - 1 $$</p>
+      <p>Email: <strong>24f1002437@ds.study.iitm.ac.in</strong></p>
     </section>
 
   </div>
@@ -99,9 +104,7 @@ print(df.head())
   Reveal.initialize({
     hash: true,
     plugins: [ RevealMarkdown, RevealMath.KaTeX ],
-    highlight: {
-      highlightOnLoad: true
-    }
+    highlight: { highlightOnLoad: true }
   });
 </script>
 
