@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
 
+  <!-- KaTeX REQUIRED for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+
   <style>
     footer {
       position: fixed;
@@ -31,56 +36,15 @@
 <div class="reveal">
   <div class="slides">
 
-    <!-- Title Slide -->
+    <!-- TITLE SLIDE -->
     <section>
       <h1>Quarterly Earnings Report</h1>
       <p>Prepared by: <strong>24f1002437@ds.study.iitm.ac.in</strong></p>
-
-      <aside class="notes">
-        Ensure stakeholders note the author email: 24f1002437@ds.study.iitm.ac.in
-      </aside>
-    </section>
-
-    <!-- Markdown Slide -->
-    <section data-markdown>
-      <textarea data-template>
-# Key Highlights (Markdown Slide)
-
-- Revenue Growth: **12% YoY**
-- Net Profit: **₹48 crore**
-- Customer Acquisition: *+18%*
-- Operating Margin: **7.4%**
-
----
-
-Contact: **24f1002437@ds.study.iitm.ac.in**
-      </textarea>
-    </section>
-
-    <!-- Fragment Slide -->
-    <section>
-      <h2>Quarterly Breakdown</h2>
-      <p class="fragment">Revenue increased across all units.</p>
-      <p class="fragment">Digital transactions up 32%.</p>
-      <p class="fragment">Costs reduced by 4%.</p>
-    </section>
-
-    <!-- Code Example -->
-    <section>
-      <h2>Data Pipeline (Code Example)</h2>
-      <pre><code class="language-python">
-import pandas as pd
-
-df = pd.read_csv("earnings.csv")
-df["growth"] = df["current_qtr"] / df["prev_qtr"] - 1
-print(df.head())
-      </code></pre>
     </section>
 
     <!-- MATH SLIDE 1 -->
     <section>
-      <h2>Mathematical Equations</h2>
-      <p>Discounted Cash Flow (DCF):</p>
+      <h2>Discounted Cash Flow (DCF)</h2>
       <p>$$ PV = \frac{CF}{(1 + r)^n} $$</p>
     </section>
 
@@ -94,7 +58,36 @@ print(df.head())
     <section>
       <h2>Compound Annual Growth Rate (CAGR)</h2>
       <p>$$ CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{n}} - 1 $$</p>
-      <p>Email: <strong>24f1002437@ds.study.iitm.ac.in</strong></p>
+    </section>
+
+    <!-- MARKDOWN -->
+    <section data-markdown>
+      <textarea data-template>
+# Summary (Markdown Slide)
+
+- Multiple math equations included  
+- DCF, NPV, and CAGR formulas  
+- Email: 24f1002437@ds.study.iitm.ac.in
+      </textarea>
+    </section>
+
+    <!-- CODE -->
+    <section>
+      <h2>Code Example</h2>
+      <pre><code class="language-python">
+import pandas as pd
+df = pd.read_csv("earnings.csv")
+df["growth"] = df["current"] / df["previous"] - 1
+print(df)
+      </code></pre>
+    </section>
+
+    <!-- FRAGMENTS -->
+    <section>
+      <h2>Financial Highlights</h2>
+      <p class="fragment">Revenue up 12%</p>
+      <p class="fragment">Customer growth 18%</p>
+      <p class="fragment">Net profit ₹48 crore</p>
     </section>
 
   </div>
@@ -104,7 +97,10 @@ print(df.head())
   Reveal.initialize({
     hash: true,
     plugins: [ RevealMarkdown, RevealMath.KaTeX ],
-    highlight: { highlightOnLoad: true }
+    math: {
+      // ensure KaTeX auto-rendering works
+      renderMath: renderMathInElement
+    }
   });
 </script>
 
